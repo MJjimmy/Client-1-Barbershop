@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Iron Chair — Premium Barbershop</title>
+
+  <!-- Google Fonts: Playfair Display (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style/style.css" />
+  
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+  ============================================ -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo">The Iron<span>Chair</span></a>
+
+      <!-- Desktop links -->
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Book button (desktop) -->
+      <a href="#contact" class="btn btn-primary" style="display:none" id="nav-cta">Book Now</a>
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#services"     onclick="closeMenu()">Services</a>
+      <a href="#pricing"      onclick="closeMenu()">Pricing</a>
+      <a href="#gallery"      onclick="closeMenu()">Gallery</a>
+      <a href="#testimonials" onclick="closeMenu()">Reviews</a>
+      <a href="#contact"      onclick="closeMenu()">Contact &amp; Book</a>
+    </div>
+  </nav>
+
+
+  <!-- ============================================
+       HERO
+  ============================================ -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-deco">IX</div>
+
+    <div class="container" style="position:relative;z-index:1;width:100%;">
+      <div class="hero-content">
+        <span class="eyebrow">Est. 1994 · Downtown Chicago</span>
+        <h1 class="section-title">
+          Sharp Cuts.<br><em>Timeless</em><br>Craft.
+        </h1>
+        <p class="hero-sub">
+          Where old-school barbering meets modern precision. Walk in looking good — leave looking unforgettable.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Book an Appointment</a>
+          <a href="#services" class="btn btn-outline">Our Services</a>
+        </div>
+      </div>
+
+      <!-- Live badge -->
+      <div class="hero-badge">
+        <strong>Open Now</strong> · Mon–Sat 9am–8pm
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       SCROLLING STRIP
+  ============================================ -->
+  <div id="about-strip">
+    <div class="strip-track">
+      <!-- Repeated twice so the scroll loops seamlessly -->
+      <span>Precision Cuts</span>
+      <span>Hot Towel Shaves</span>
+      <span>Beard Grooming</span>
+      <span>Fade Specialists</span>
+      <span>30 Years of Craft</span>
+      <span>Walk-ins Welcome</span>
+      <span>Precision Cuts</span>
+      <span>Hot Towel Shaves</span>
+      <span>Beard Grooming</span>
+      <span>Fade Specialists</span>
+      <span>30 Years of Craft</span>
+      <span>Walk-ins Welcome</span>
+    </div>
+  </div>
+
+
+  <!-- ============================================
+       SERVICES
+  ============================================ -->
+  <section id="services">
+    <div class="container">
+
+      <!-- Section header -->
+      <div class="services-header reveal">
+        <div>
+          <span class="eyebrow">What We Do</span>
+          <h2 class="section-title">Crafted<br>to Perfection</h2>
+        </div>
+        <p style="color:var(--muted);font-size:.95rem;max-width:380px;">
+          Every service is performed with intent, precision, and respect for the craft that has defined us for three decades.
+        </p>
+      </div>
+
+      <!-- Service cards -->
+      <div class="services-grid reveal">
+
+        <div class="service-card">
+          <div class="service-icon">✂️</div>
+          <h3 class="service-name">Classic Haircut</h3>
+          <p class="service-desc">A tailored cut styled to your face shape, hair texture, and lifestyle. Every visit starts with a detailed consultation.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🪒</div>
+          <h3 class="service-name">Hot Towel Shave</h3>
+          <p class="service-desc">The full luxury experience. Warm lather, a perfectly weighted straight razor, and a cooling finish that lasts all day.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">⚡</div>
+          <h3 class="service-name">Skin Fade</h3>
+          <p class="service-desc">Low, mid, or high — our fades are seamless and precise. The sharpest taper work in the city.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🧔</div>
+          <h3 class="service-name">Beard Sculpt</h3>
+          <p class="service-desc">Shape, trim, define, and edge your beard to perfectly complement your features. Includes hot towel prep.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">👶</div>
+          <h3 class="service-name">Kids Cut</h3>
+          <p class="service-desc">A patient, fun experience for the young ones. Clean styles that parents love and kids actually sit still for.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💆</div>
+          <h3 class="service-name">Scalp Treatment</h3>
+          <p class="service-desc">A therapeutic scalp massage and treatment that promotes healthy hair growth and total relaxation.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       PRICING
+  ============================================ -->
+  <section id="pricing">
+    <div class="container">
+
+      <div class="pricing-header reveal">
+        <span class="eyebrow">Investment</span>
+        <h2 class="section-title">Simple, Honest Pricing</h2>
+        <div class="divider"></div>
+        <p style="color:var(--muted);font-size:.95rem;max-width:420px;margin:0 auto;">
+          No hidden fees. No upsells. Just great value for exceptional work.
+        </p>
+      </div>
+
+      <div class="pricing-grid reveal">
+
+        <!-- Tier 1: Essential -->
+        <div class="pricing-card">
+          <h3 class="pricing-name">Essential</h3>
+          <div class="pricing-price"><sup>$</sup>28</div>
+          <p class="pricing-desc">Perfect for regular maintenance visits.</p>
+          <ul class="pricing-list">
+            <li>Classic haircut &amp; style</li>
+            <li>Neck and edge cleanup</li>
+            <li>Hot towel finish</li>
+            <li>Style product application</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" style="width:100%;text-align:center;">Book Now</a>
+        </div>
+
+        <!-- Tier 2: Signature (featured) -->
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <h3 class="pricing-name">Signature</h3>
+          <div class="pricing-price"><sup>$</sup>52</div>
+          <p class="pricing-desc">The complete experience our regulars swear by.</p>
+          <ul class="pricing-list">
+            <li>Haircut with skin fade</li>
+            <li>Beard sculpt &amp; lineup</li>
+            <li>Full hot towel shave</li>
+            <li>Scalp massage (10 min)</li>
+            <li>Premium product finish</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" style="width:100%;text-align:center;">Book Now</a>
+        </div>
+
+        <!-- Tier 3: VIP -->
+        <div class="pricing-card">
+          <h3 class="pricing-name">VIP</h3>
+          <div class="pricing-price"><sup>$</sup>85</div>
+          <p class="pricing-desc">A complete luxury grooming ritual.</p>
+          <ul class="pricing-list">
+            <li>Everything in Signature</li>
+            <li>Extended scalp treatment</li>
+            <li>Eyebrow shaping</li>
+            <li>Complimentary beverage</li>
+            <li>Priority scheduling</li>
+            <li>Take-home grooming kit</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" style="width:100%;text-align:center;">Book Now</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       GALLERY
+  ============================================ -->
+  <section id="gallery">
+    <div class="container">
+
+      <div class="gallery-header reveal">
+        <div>
+          <span class="eyebrow">Our Work</span>
+          <h2 class="section-title">Fresh out<br>the Chair</h2>
+        </div>
+        <a href="#contact" class="btn btn-outline">Get Your Cut</a>
+      </div>
+
+      <!-- Gallery grid with placeholder tiles -->
+      <div class="gallery-grid reveal">
+
+        <div class="gallery-item gi-1">
+          <div class="gallery-icon">✂️</div>
+          <span class="gallery-item-label">Classic Fade</span>
+        </div>
+
+        <div class="gallery-item gi-2">
+          <div class="gallery-icon">🪒</div>
+          <span class="gallery-item-label">Hot Shave</span>
+        </div>
+
+        <div class="gallery-item gi-3">
+          <div class="gallery-icon">🧔</div>
+          <span class="gallery-item-label">Beard Sculpt</span>
+        </div>
+
+        <div class="gallery-item gi-4">
+          <div class="gallery-icon">⚡</div>
+          <span class="gallery-item-label">Skin Fade</span>
+        </div>
+
+        <div class="gallery-item gi-5">
+          <div class="gallery-icon">✨</div>
+          <span class="gallery-item-label">Signature Look</span>
+        </div>
+
+      </div>
+
+      <p style="text-align:center;margin-top:1.5rem;font-size:.8rem;color:var(--muted);">
+        Replace gallery tiles with your own photos via the <code style="color:var(--gold);">.gallery-item</code> CSS class.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       TESTIMONIALS
+  ============================================ -->
+  <section id="testimonials">
+    <div class="container">
+
+      <div class="testimonials-header reveal">
+        <span class="eyebrow">Client Reviews</span>
+        <h2 class="section-title">What People Say</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="testimonials-grid reveal">
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">Best fade in the city, hands down. Marcus has been cutting my hair for 6 years and I would never go anywhere else. The shop has a great vibe too.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JT</div>
+            <div>
+              <div class="author-name">James T.</div>
+              <div class="author-since">Client since 2018</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">Walked in without an appointment on a Saturday and still got seen within 20 minutes. The hot towel shave is absolutely incredible — I feel like a new person.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RK</div>
+            <div>
+              <div class="author-name">Rafael K.</div>
+              <div class="author-since">Client since 2021</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">Took my 5-year-old son here and he actually sat still the whole time. The barbers are patient and friendly. The kid's cut looks amazing — we're regulars now.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DM</div>
+            <div>
+              <div class="author-name">David M.</div>
+              <div class="author-since">Client since 2023</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       CONTACT & BOOKING FORM
+  ============================================ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: Info -->
+        <div class="contact-info reveal">
+          <span class="eyebrow">Visit Us</span>
+          <h2 class="section-title">Let's Get You In the Chair</h2>
+          <div class="divider"></div>
+          <p style="color:var(--muted);font-size:.9rem;line-height:1.7;">
+            Book a slot below or call us directly. Walk-ins are always welcome — we'll do our best to fit you in.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-row">
+              <div class="contact-row-icon">📍</div>
+              <div class="contact-row-text">
+                <strong>Address</strong>
+                <span>142 North Wabash Ave, Chicago, IL 60601</span>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-row-icon">📞</div>
+              <div class="contact-row-text">
+                <strong>Phone</strong>
+                <span>(312) 555-0194</span>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-row-icon">🕐</div>
+              <div class="contact-row-text">
+                <strong>Hours</strong>
+                <span>Mon–Fri 9am – 8pm<br>Sat 8am – 6pm<br>Sun Closed</span>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-row-icon">✉️</div>
+              <div class="contact-row-text">
+                <strong>Email</strong>
+                <span>hello@theironchair.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form reveal">
+          <h3 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:1.8rem;">
+            Book an Appointment
+          </h3>
+
+          <!-- NOTE: Connect to a backend or form service (e.g. Formspree) to make this live -->
+          <form id="booking-form" onsubmit="handleSubmit(event)">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first_name" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Doe" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="john@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(312) 555-0000" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service…</option>
+                <option value="essential">Essential — $28</option>
+                <option value="signature">Signature — $52</option>
+                <option value="vip">VIP — $85</option>
+                <option value="kids">Kids Cut — $18</option>
+                <option value="beard">Beard Sculpt — $22</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <select id="time" name="time">
+                  <option value="" disabled selected>Select…</option>
+                  <option>9:00 AM</option>
+                  <option>10:00 AM</option>
+                  <option>11:00 AM</option>
+                  <option>12:00 PM</option>
+                  <option>1:00 PM</option>
+                  <option>2:00 PM</option>
+                  <option>3:00 PM</option>
+                  <option>4:00 PM</option>
+                  <option>5:00 PM</option>
+                  <option>6:00 PM</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Notes (optional)</label>
+              <textarea id="notes" name="notes" placeholder="Anything special we should know? Style references, hair type, etc."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">Confirm Booking</button>
+          </form>
+
+          <!-- Success message (hidden by default) -->
+          <div id="form-success" style="display:none;text-align:center;padding:2rem 0;">
+            <div style="font-size:2.5rem;margin-bottom:1rem;">✅</div>
+            <h4 style="font-family:var(--font-display);font-size:1.4rem;margin-bottom:.5rem;">You're booked!</h4>
+            <p style="color:var(--muted);font-size:.9rem;">We'll send a confirmation to your email. See you soon.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       FOOTER
+  ============================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="nav-logo" style="font-size:1.6rem;">The Iron<span style="color:var(--gold);">Chair</span></div>
+          <p>Old-school barbering with a modern edge. Serving Chicago's finest since 1994.</p>
+          <div class="social-links" style="margin-top:1.5rem;">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">👥</a>
+            <a href="#" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+
+        <!-- Nav links -->
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Book Now</a></li>
+          </ul>
+        </div>
+
+        <!-- Services mini list -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Classic Cut</a></li>
+            <li><a href="#services">Skin Fade</a></li>
+            <li><a href="#services">Hot Shave</a></li>
+            <li><a href="#services">Beard Sculpt</a></li>
+            <li><a href="#services">Kids Cut</a></li>
+          </ul>
+        </div>
+
+        <!-- Hours -->
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul class="footer-hours">
+            <li><span>Mon – Fri</span><span>9am – 8pm</span></li>
+            <li><span>Saturday</span><span>8am – 6pm</span></li>
+            <li><span>Sunday</span><span>Closed</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <p>© 2025 The Iron Chair Barbershop. All rights reserved.</p>
+        <p style="color:rgba(136,136,136,.4);">142 N Wabash Ave · Chicago, IL</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================
+       JAVASCRIPT
+  ============================================ -->
+  <script>
+    // ── Navbar scroll effect ──────────────────────
+    const navbar = document.getElementById('navbar');
+    const navCta = document.getElementById('nav-cta');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        navbar.classList.add('scrolled');
+        navCta.style.display = 'inline-block';
+      } else {
+        navbar.classList.remove('scrolled');
+        navCta.style.display = 'none';
+      }
+    });
+
+    // ── Mobile hamburger menu ─────────────────────
+    const hamburger   = document.getElementById('hamburger');
+    const mobileMenu  = document.getElementById('mobile-menu');
+    let menuOpen = false;
+
+    hamburger.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      mobileMenu.classList.toggle('open', menuOpen);
+
+      // Animate hamburger to X
+      const spans = hamburger.querySelectorAll('span');
+      if (menuOpen) {
+        spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+      } else {
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      }
+    });
+
+    function closeMenu() {
+      menuOpen = false;
+      mobileMenu.classList.remove('open');
+      const spans = hamburger.querySelectorAll('span');
+      spans[0].style.transform = '';
+      spans[1].style.opacity = '';
+      spans[2].style.transform = '';
+    }
+
+    // ── Scroll reveal ─────────────────────────────
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // only animate once
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => observer.observe(el));
+
+    // ── Form submission (demo) ────────────────────
+    function handleSubmit(e) {
+      e.preventDefault(); // Prevent real submit (no backend yet)
+
+      const form    = document.getElementById('booking-form');
+      const success = document.getElementById('form-success');
+
+      form.style.display    = 'none';
+      success.style.display = 'block';
+
+      // In production: replace this with a fetch() to your backend or Formspree endpoint
+      // e.g. fetch('https://formspree.io/f/YOUR_ID', { method:'POST', body: new FormData(e.target) })
+    }
+
+    // ── Set date input min to today ───────────────
+    const dateInput = document.getElementById('date');
+    if (dateInput) {
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.setAttribute('min', today);
+    }
+  </script>
+
+</body>
+</html>
